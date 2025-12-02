@@ -1,7 +1,18 @@
 {
+  "burstObservatory": {
+    "pingConfig": {
+      "destination": "https://www.gstatic
+      "interval": "5m",
+      "sampling": 2,
+      "timeout": "30s"
+    },
+    "subjectSelector": [
+      "proxy-"
+    ]
+  },
   "dns": {
     "hosts": {
-      "domain:googleapis.cn": "googleapis.com",
+      "domain:googleapis.cn": "googleapis
       "dns.alidns.com": [
         "223.5.5.5",
         "223.6.6.6",
@@ -48,18 +59,12 @@
         "2a02:6b8::feed:0ff",
         "2a02:6b8:0:1::feed:0ff"
       ],
-      "176.98.178.184": "176.98.178.184",
-      "217.16.20.134": "217.16.20.134",
-      "45.12.136.48": "45.12.136.48",
       "alb03.abvpn.ru": "78.159.131.51",
-      "c83c9sleow.a.trbcdn.net": "151.236.104.125",
+      "c83c9sleow.a.trbcdn.net": "128.75.
       "de24.abvpn.ru": "84.200.81.229",
-      "de29.tcpdoor.net": "38.180.175.65",
       "de31.abvpn.ru": "81.19.141.144",
-      "nl18.tcpdoor.net": "212.111.87.162",
+      "nl18.tcpdoor.net": "212.111.87.162
       "nl20.abvpn.ru": "45.8.144.198",
-      "ru26.abvpn.ru": "217.16.22.184",
-      "ru33.abvpn.net": "217.16.19.114",
       "ru36.tcpdoor.net": "37.9.54.98",
       "usa03.abvpn.net": "103.35.189.138"
     },
@@ -115,14 +120,6 @@
   "log": {
     "loglevel": "warning"
   },
-  "observatory": {
-    "enableConcurrency": true,
-    "probeInterval": "3m",
-    "probeUrl": "https://www.gstatic.com/generate_204",
-    "subjectSelector": [
-      "proxy-"
-    ]
-  },
   "outbounds": [
     {
       "mux": {
@@ -133,12 +130,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "176.98.178.184",
+            "address": "145.223.69.171",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "d57dc7ce-799e-4551-bb3b-38a8ebadc9d1",
+                "id": "1db716dc-ac40-457a
                 "level": 8
               }
             ]
@@ -148,25 +145,15 @@
       "streamSettings": {
         "network": "tcp",
         "realitySettings": {
-          "allowInsecure": true,
+          "allowInsecure": false,
           "fingerprint": "firefox",
-          "publicKey": "d-XqNbiYbaZbxNUrIoikQmrO4tnE_CByJ53pN-VT10I",
+          "publicKey": "JQHrZXZRnkZUOMdNH
           "serverName": "www.vk.com",
-          "shortId": "2d4639f7",
+          "shortId": "a8e539fd",
           "show": false,
           "spiderX": "/"
         },
         "security": "reality",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-
-"happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": true,
-            "tryDelayMs": 250
-          }
-        },
         "tcpSettings": {
           "header": {
             "type": "none"
@@ -181,15 +168,16 @@
         "enabled": false
       },
       "protocol": "vless",
-      "settings": {
+
+"settings": {
         "vnext": [
           {
-            "address": "217.16.20.134",
+            "address": "176.98.178.184",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "d57dc7ce-799e-4551-bb3b-38a8ebadc9d1",
+                "id": "1db716dc-ac40-457a
                 "level": 8
               }
             ]
@@ -199,24 +187,15 @@
       "streamSettings": {
         "network": "tcp",
         "realitySettings": {
-          "allowInsecure": true,
+          "allowInsecure": false,
           "fingerprint": "firefox",
-          "publicKey": "24lsP7iRzgT7pMhCprlmHUB6_mbR17Pxc6P0R29f-Rk",
+          "publicKey": "d-XqNbiYbaZbxNUrI
           "serverName": "www.vk.com",
-          "shortId": "446742d1",
+          "shortId": "1df995ca",
           "show": false,
           "spiderX": "/"
         },
         "security": "reality",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": true,
-            "tryDelayMs": 250
-          }
-        },
         "tcpSettings": {
           "header": {
             "type": "none"
@@ -234,12 +213,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.12.136.48",
+            "address": "217.16.20.134",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "d57dc7ce-799e-4551-bb3b-38a8ebadc9d1",
+                "id": "1db716dc-ac40-457a
                 "level": 8
               }
             ]
@@ -249,24 +228,15 @@
       "streamSettings": {
         "network": "tcp",
         "realitySettings": {
-          "allowInsecure": true,
+          "allowInsecure": false,
           "fingerprint": "firefox",
-          "publicKey": "E-fIlniARgucl-Y8wctxQr4wPuDibRYnOCHCYAEVbws",
-          "serverName": "mirror.yandex.ru",
-          "shortId": "a4ee484d",
+          "publicKey": "24lsP7iRzgT7pMhCp
+          "serverName": "www.vk.com",
+          "shortId": "446742d1",
           "show": false,
           "spiderX": "/"
         },
         "security": "reality",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": true,
-            "tryDelayMs": 250
-          }
-        },
         "tcpSettings": {
           "header": {
             "type": "none"
@@ -284,12 +254,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "alb03.abvpn.ru",
+            "address": "45.12.136.48",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "d57dc7ce-799e-4551-bb3b-38a8ebadc9d1",
+                "id": "1db716dc-ac40-457a
                 "level": 8
               }
             ]
@@ -299,25 +269,15 @@
       "streamSettings": {
         "network": "tcp",
         "realitySettings": {
-          "allowInsecure": true,
+          "allowInsecure": false,
           "fingerprint": "firefox",
-          "publicKey": "bonLTdEWniTF7h32iBBM4XK5CP0MhhZ0rIegMsYpbkw",
-          "serverName": "www.samsung.com",
-          "shortId": "7d498dcd",
+          "publicKey": "E-fIlniARgucl-Y8w
+          "serverName": "mirror.yandex.ru
+          "shortId": "a4ee484d",
           "show": false,
           "spiderX": "/"
         },
         "security": "reality",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": true,
-            "tryDelayMs": 250
-
-}
-        },
         "tcpSettings": {
           "header": {
             "type": "none"
@@ -335,12 +295,63 @@
       "settings": {
         "vnext": [
           {
-            "address": "c83c9sleow.a.trbcdn.net",
+            "address": "alb03.abvpn.ru",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "d57dc7ce-799e-4551-bb3b-38a8ebadc9d1",
+                "id": "1db716dc-ac40-457a
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "bonLTdEWniTF7h32i
+          "serverName": "www.samsung.com"
+          "shortId": "702cc6ff",
+          "show": false,
+          "spiderX": "/"
+        },
+        "security": "reality",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+
+"prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-5"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "c83c9sleow.a.trbc
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "1db716dc-ac40-457a
                 "level": 8
               }
             ]
@@ -355,7 +366,7 @@
           "happyEyeballs": {
             "interleave": 2,
             "maxConcurrentTry": 4,
-            "prioritizeIPv6": true,
+            "prioritizeIPv6": false,
             "tryDelayMs": 250
           }
         },
@@ -365,16 +376,16 @@
             "h2"
           ],
           "fingerprint": "firefox",
-          "serverName": "c83c9sleow.a.trbcdn.net",
+          "serverName": "c83c9sleow.a.trb
           "show": false
         },
         "xhttpSettings": {
-          "host": "c83c9sleow.a.trbcdn.net",
+          "host": "c83c9sleow.a.trbcdn.ne
           "mode": "auto",
           "path": "/xhttp/"
         }
       },
-      "tag": "proxy-5"
+      "tag": "proxy-6"
     },
     {
       "mux": {
@@ -390,7 +401,7 @@
             "users": [
               {
                 "encryption": "none",
-                "id": "d57dc7ce-799e-4551-bb3b-38a8ebadc9d1",
+                "id": "1db716dc-ac40-457a
                 "level": 8
               }
             ]
@@ -400,11 +411,11 @@
       "streamSettings": {
         "network": "tcp",
         "realitySettings": {
-          "allowInsecure": true,
+          "allowInsecure": false,
           "fingerprint": "firefox",
-          "publicKey": "eKglVNr1vCmVZxLeGS6_-sZWXEJLWckuzkpmox1-jQ8",
+          "publicKey": "eKglVNr1vCmVZxLeG
           "serverName": "www.stepik.org",
-          "shortId": "b05bc387",
+          "shortId": "8559e2aa",
           "show": false,
           "spiderX": "/"
         },
@@ -414,57 +425,7 @@
           "happyEyeballs": {
             "interleave": 2,
             "maxConcurrentTry": 4,
-            "prioritizeIPv6": true,
-            "tryDelayMs": 250
-          }
-        },
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-6"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "de29.tcpdoor.net",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "d57dc7ce-799e-4551-bb3b-38a8ebadc9d1",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": true,
-          "fingerprint": "firefox",
-          "publicKey": "7Q7ql61HDXzXs_ISyVUD7Dysm6dVMnwYCk9zGNCRO1Y",
-          "serverName": "www.samsung.com",
-          "shortId": "324cb4e9",
-          "show": false,
-          "spiderX": "/"
-        },
-        "security": "reality",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": true,
+            "prioritizeIPv6": false,
             "tryDelayMs": 250
           }
         },
@@ -478,8 +439,7 @@
     },
     {
       "mux": {
-
-"concurrency": -1,
+        "concurrency": -1,
         "enabled": false
       },
       "protocol": "vless",
@@ -491,7 +451,7 @@
             "users": [
               {
                 "encryption": "none",
-                "id": "d57dc7ce-799e-4551-bb3b-38a8ebadc9d1",
+                "id": "1db716dc-ac40-457a
                 "level": 8
               }
             ]
@@ -501,11 +461,11 @@
       "streamSettings": {
         "network": "tcp",
         "realitySettings": {
-          "allowInsecure": true,
+          "allowInsecure": false,
           "fingerprint": "firefox",
-          "publicKey": "Wg_prcp8fAsUrveCKVqBsk_8mWuKurQb-0N3H1e35mk",
+          "publicKey": "Wg_prcp8fAsUrveCK
           "serverName": "st.ozone.ru",
-          "shortId": "9676bdc4",
+          "shortId": "9083cd84",
           "show": false,
           "spiderX": "/"
         },
@@ -515,7 +475,7 @@
           "happyEyeballs": {
             "interleave": 2,
             "maxConcurrentTry": 4,
-            "prioritizeIPv6": true,
+            "prioritizeIPv6": false,
             "tryDelayMs": 250
           }
         },
@@ -524,7 +484,8 @@
             "type": "none"
           }
         }
-      },
+
+},
       "tag": "proxy-8"
     },
     {
@@ -536,12 +497,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "nl18.tcpdoor.net",
+            "address": "nl18.tcpdoor.net"
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "d57dc7ce-799e-4551-bb3b-38a8ebadc9d1",
+                "id": "1db716dc-ac40-457a
                 "level": 8
               }
             ]
@@ -551,11 +512,11 @@
       "streamSettings": {
         "network": "tcp",
         "realitySettings": {
-          "allowInsecure": true,
+          "allowInsecure": false,
           "fingerprint": "firefox",
-          "publicKey": "_AOJzF5benw33O7Le3OXfVhGf7crZZCTep4O4vI8gms",
+          "publicKey": "_AOJzF5benw33O7Le
           "serverName": "www.vk.com",
-          "shortId": "699446a9",
+          "shortId": "e939cc2b",
           "show": false,
           "spiderX": "/"
         },
@@ -565,7 +526,7 @@
           "happyEyeballs": {
             "interleave": 2,
             "maxConcurrentTry": 4,
-            "prioritizeIPv6": true,
+            "prioritizeIPv6": false,
             "tryDelayMs": 250
           }
         },
@@ -591,7 +552,7 @@
             "users": [
               {
                 "encryption": "none",
-                "id": "d57dc7ce-799e-4551-bb3b-38a8ebadc9d1",
+                "id": "1db716dc-ac40-457a
                 "level": 8
               }
             ]
@@ -601,11 +562,11 @@
       "streamSettings": {
         "network": "tcp",
         "realitySettings": {
-          "allowInsecure": true,
+          "allowInsecure": false,
           "fingerprint": "firefox",
-          "publicKey": "KXA-hPtvy_hzNER1ZNtUxBv_VrGGKfmIyi4CQAyjGxs",
-          "serverName": "mirror.yandex.ru",
-          "shortId": "e9e85490",
+          "publicKey": "KXA-hPtvy_hzNER1Z
+          "serverName": "mirror.yandex.ru
+          "shortId": "c6c17b60",
           "show": false,
           "spiderX": "/"
         },
@@ -615,7 +576,7 @@
           "happyEyeballs": {
             "interleave": 2,
             "maxConcurrentTry": 4,
-            "prioritizeIPv6": true,
+            "prioritizeIPv6": false,
             "tryDelayMs": 250
           }
         },
@@ -636,13 +597,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "ru26.abvpn.ru",
-
-"port": 443,
+            "address": "ru36.tcpdoor.net"
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "d57dc7ce-799e-4551-bb3b-38a8ebadc9d1",
+                "id": "1db716dc-ac40-457a
                 "level": 8
               }
             ]
@@ -652,11 +612,11 @@
       "streamSettings": {
         "network": "tcp",
         "realitySettings": {
-          "allowInsecure": true,
+          "allowInsecure": false,
           "fingerprint": "firefox",
-          "publicKey": "68qIW5ejmsr2oPCqnDjHb-p_Cp_iDQ888t2II-PBDFA",
-          "serverName": "mirror.yandex.ru",
-          "shortId": "221b0c0c",
+          "publicKey": "jlnKFP7eXy5fFjmH1
+          "serverName": "eh.vk.com",
+          "shortId": "6efc2d50",
           "show": false,
           "spiderX": "/"
         },
@@ -666,7 +626,7 @@
           "happyEyeballs": {
             "interleave": 2,
             "maxConcurrentTry": 4,
-            "prioritizeIPv6": true,
+            "prioritizeIPv6": false,
             "tryDelayMs": 250
           }
         },
@@ -684,15 +644,16 @@
         "enabled": false
       },
       "protocol": "vless",
-      "settings": {
+
+"settings": {
         "vnext": [
           {
-            "address": "ru33.abvpn.net",
+            "address": "usa03.abvpn.net",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "d57dc7ce-799e-4551-bb3b-38a8ebadc9d1",
+                "id": "1db716dc-ac40-457a
                 "level": 8
               }
             ]
@@ -702,11 +663,11 @@
       "streamSettings": {
         "network": "tcp",
         "realitySettings": {
-          "allowInsecure": true,
+          "allowInsecure": false,
           "fingerprint": "firefox",
-          "publicKey": "s0qb5ggFZN3X7QXWtgK4o7UgfS9DlpFC6JT6OWVs6X4",
-          "serverName": "www.vk.com",
-          "shortId": "e3fdd331",
+          "publicKey": "J0_Stw7IIr6naIGCt
+          "serverName": "mirror.yandex.ru
+          "shortId": "2b0f",
           "show": false,
           "spiderX": "/"
         },
@@ -716,7 +677,7 @@
           "happyEyeballs": {
             "interleave": 2,
             "maxConcurrentTry": 4,
-            "prioritizeIPv6": true,
+            "prioritizeIPv6": false,
             "tryDelayMs": 250
           }
         },
@@ -727,107 +688,6 @@
         }
       },
       "tag": "proxy-12"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "ru36.tcpdoor.net",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "d57dc7ce-799e-4551-bb3b-38a8ebadc9d1",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": true,
-          "fingerprint": "firefox",
-          "publicKey": "jlnKFP7eXy5fFjmH1HD8_3A-AKbraZvJMwPE03BRuhQ",
-          "serverName": "eh.vk.com",
-          "shortId": "6efc2d50",
-          "show": false,
-          "spiderX": "/"
-        },
-        "security": "reality",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": true,
-            "tryDelayMs": 250
-          }
-        },
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-13"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "usa03.abvpn.net",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "d57dc7ce-799e-4551-bb3b-38a8ebadc9d1",
-
-"level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": true,
-          "fingerprint": "firefox",
-          "publicKey": "J0_Stw7IIr6naIGCtZ1ZB75HfD-KIITZMy84jQVufyU",
-          "serverName": "mirror.yandex.ru",
-          "shortId": "3303c7a5",
-          "show": false,
-          "spiderX": "/"
-        },
-        "security": "reality",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": true,
-            "tryDelayMs": 250
-          }
-        },
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-14"
     },
     {
       "protocol": "freedom",
@@ -846,21 +706,7 @@
       "tag": "block"
     }
   ],
-  "policy": {
-    "levels": {
-      "8": {
-        "connIdle": 300,
-        "downlinkOnly": 1,
-        "handshake": 4,
-        "uplinkOnly": 1
-      }
-    },
-    "system": {
-      "statsOutboundUplink": true,
-      "statsOutboundDownlink": true
-    }
-  },
-  "remarks": "Авто подключение: ProxyNova",
+  "remarks": "ProxyNova Авто выбор",
   "routing": {
     "balancers": [
       {
@@ -868,7 +714,7 @@
           "proxy-"
         ],
         "strategy": {
-          "type": "leastPing"
+          "type": "leastLoad"
         },
         "tag": "proxy-round"
       }
@@ -930,14 +776,16 @@
           "140.207.198.6",
           "1.2.4.8",
           "210.2.4.8",
-          "117.50.11.11",
           "52.80.66.66",
+          "117.50.22.22",
           "2400:7fc0:849e:200::4",
           "2404:c2c0:85d8:901::4",
           "117.50.10.10",
           "52.80.52.52",
           "2400:7fc0:849e:200::8",
-          "2404:c2c0:85d8:901::8"
+          "2404:c2c0:85d8:901::8",
+          "117.50.60.30",
+          "52.80.60.30"
         ],
         "outboundTag": "direct",
         "type": "field"
@@ -969,10 +817,10 @@
       },
       {
         "inboundTag": [
-          "domestic-dns"
-        ],
 
-"outboundTag": "direct",
+"domestic-dns"
+        ],
+        "outboundTag": "direct",
         "type": "field"
       },
       {
@@ -988,6 +836,49 @@
         "type": "field"
       }
     ]
-  },
-  "stats": {}
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
